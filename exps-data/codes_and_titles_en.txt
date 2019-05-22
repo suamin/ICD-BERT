@@ -1,0 +1,230 @@
+Infectious bowel diseases	A00-A09
+tuberculosis	A15-A19
+Certain bacterial zoonoses	A20-A28
+Other bacterial diseases	A30-A49
+Infections that are transmitted primarily through sexual intercourse	A50-A64
+Other spirochete diseases	A65-A69
+Other diseases due to chlamydia	A70-A74
+Rickettsiosen	A75-A79
+Viral infections of the central nervous system	A80-A89
+Arthropod - borne viral diseases and viral haemorrhagic fevers	A92-A99
+Viral infections characterized by cutaneous and mucosal lesions	B00-B09
+Virushepatitis	B15-B19
+HIV Disease [ Human Immunodeficiency Virus Disease ]	B20-B24
+Other viral diseases	B25-B34
+Mykosen	B35-B49
+Protozoenkrankheiten	B50-B64
+Helminthosen	B65-B83
+Pediculosis [ lice infestation ] , akarinosis [ mite infestation ] and other parasitic infestations of the skin	B85-B89
+Bacteria , viruses and other infectious agents as the cause of diseases classified in other chapters	B95-B98
+Other infectious diseases	B99-B99
+Malignant neoplasms of the lip , oral cavity and pharynx	C00-C14
+Malignant neoplasms at specified localities , identified as primary or suspected except lymphatic , blood - forming and related tissues	C00-C75
+Malignant neoplasms	C00-C97
+Malignant neoplasms of the digestive organs	C15-C26
+Malignant neoplasms of the respiratory organs and other intrathoracic organs	C30-C39
+Malignant neoplasms of bone and articular cartilage	C40-C41
+Melanoma and other malignant neoplasms of the skin	C43-C44
+Malignant neoplasms of mesothelial tissue and soft tissue	C45-C49
+Malignant neoplasms of the mammary gland [ Mamma ]	C50-C50
+Malignant neoplasms of the female genital organs	C51-C58
+Malignant neoplasms of the male genital organs	C60-C63
+Malignant neoplasms of the urinary organs	C64-C68
+Malignant neoplasms of the eye , brain , and other parts of the central nervous system	C69-C72
+Malignant neoplasms of the thyroid gland and other endocrine glands	C73-C75
+Malignant neoplasms of inaccurately designated , secondary and unspecified locations	C76-C80
+Malignant neoplasms of lymphoid , hematopoietic and related tissue , considered primary or suspected	C81-C96
+In situ neoplasms	D00-D09
+Benign neoplasms	D10-D36
+New growths of uncertain or unknown behavior	D37-D48
+Hemolytic anemias	D55-D59
+Aplastic and other anemia	D60-D64
+Coagulopathies , purpura and other hemorrhagic diatheses	D65-D69
+Other diseases of the blood and the blood - forming organs	D70-D77
+Certain disorders involving the immune system	D80-D90
+Diseases of the thyroid gland	E00-E07
+Diabetes mellitus	E10-E14
+Other disorders of blood glucose regulation and internal secretion of the pancreas	E15-E16
+Diseases of other endocrine glands	E20-E35
+malnutrition	E40-E46
+Other alimentary deficiencies	E50-E64
+Obesity and other overeating	E65-E68
+Metabolic disorders	E70-E90
+Organic , including symptomatic mental disorders	F00-F09
+Mental and behavioral disorders due to psychotropic substances	F10-F19
+Schizophrenia , schizotypal and delusional disorders	F20-F29
+Affective disorders	F30-F39
+Neurotic , stress and somatoform disorders	F40-F48
+Behavioral problems with physical disorders and factors	F50-F59
+Personality and behavioral disorders	F60-F69
+Mental retardation	F70-F79
+developmental disorders	F80-F89
+Behavioral and emotional disorders beginning in childhood and adolescence	F90-F98
+Unspecified mental disorders	F99-F99
+Inflammatory diseases of the central nervous system	G00-G09
+System atrophies , which mainly affect the central nervous system	G10-G14
+Extrapyramidal diseases and movement disorders	G20-G26
+Other degenerative diseases of the nervous system	G30-G32
+Demyelinating diseases of the central nervous system	G35-G37
+Episodic and paroxysmal diseases of the nervous system	G40-G47
+Diseases of nerves , nerve roots and nerve plexus	G50-G59
+Polyneuropathies and other diseases of the peripheral nervous system	G60-G64
+Diseases in the area of the neuromuscular synapse and the muscle	G70-G73
+Cerebral palsy and other paralysis syndromes	G80-G83
+Other diseases of the nervous system	G90-G99
+Affections of the eyelid , lacrimal apparatus and orbit	H00-H06
+Diseases of the sclera , the cornea , the iris and the ciliary body	H15-H22
+Affections of the lens	H25-H28
+Affections of the choroid and the retina	H30-H36
+glaucoma	H40-H42
+Affections of the optic nerve and the visual pathway	H46-H48
+Disorders of the eye muscles , disturbances of the eye movements as well as accommodation disturbances and refractive errors	H49-H52
+Blurred vision and blindness	H53-H54
+Other affections of the eye and the eye appendages	H55-H59
+Diseases of the inner ear	H80-H83
+Other diseases of the ear	H90-H95
+Certain infectious and parasitic diseases	I
+Chronic rheumatic heart disease	I05-I09
+Hypertension [ hypertension ]	I10-I15
+Ischemic heart disease	I20-I25
+Pulmonary heart disease and pulmonary circulation diseases	I26-I28
+Other forms of heart disease	I30-I52
+Cerebrovascular diseases	I60-I69
+Diseases of the arteries , arterioles and capillaries	I70-I79
+Diseases of the veins , lymphatics and lymph nodes , not elsewhere classified	I80-I89
+Other and unspecified diseases of the circulatory system	I95-I99
+neoplasms	II
+Diseases of the blood and blood - forming organs as well as certain disorders involving the immune system	III
+Endocrine , nutritional and metabolic diseases	IV
+Diseases of the circulatory system	IX
+Acute upper respiratory infections	J00-J06
+Flu and pneumonia	J09-J18
+Other acute infections of the lower respiratory tract	J20-J22
+Other diseases of the upper respiratory tract	J30-J39
+Chronic diseases of the lower respiratory tract	J40-J47
+Lung diseases caused by exogenous substances	J60-J70
+Other diseases of the respiratory system , which mainly affect the interstitium	J80-J84
+Other diseases of the respiratory system	J95-J99
+Diseases of the oral cavity , salivary glands and the jaw	K00-K14
+Diseases of the esophagus , stomach and duodenum	K20-K31
+Hernien	K40-K46
+Non - infectious enteritis and colitis	K50-K52
+Other diseases of the intestine	K55-K64
+Diseases of the peritoneum	K65-K67
+Diseases of the liver	K70-K77
+Diseases of the gallbladder , biliary tract and pancreas	K80-K87
+Other diseases of the digestive system	K90-K93
+Infections of the skin and subcutaneous tissue	L00-L08
+Bullos Dermatosen	L10-L14
+Dermatitis and eczema	L20-L30
+Papulosquamous dermal diseases	L40-L45
+Urticaria and erythema	L50-L54
+Diseases of the appendages	L60-L75
+Other diseases of the skin and subcutaneous tissue	L80-L99
+Infectious arthropathies	M00-M03
+Arthropathien	M00-M25
+Inflammatory polyarthropathies	M05-M14
+osteoarthritis	M15-M19
+Other joint diseases	M20-M25
+Systemic diseases of connective tissue	M30-M36
+Diseases of the spine and back	M40-M54
+Other diseases of the spine and back	M50-M54
+Diseases of the muscles	M60-M63
+Diseases of the soft tissue	M60-M79
+Diseases of the synovium and tendons	M65-M68
+Other diseases of the soft tissue	M70-M79
+Changes in bone density and structure	M80-M85
+Osteopathies and chondropathies	M80-M94
+Other osteopathies	M86-M90
+Chondropathien	M91-M94
+Other diseases of the musculoskeletal system and connective tissue	M95-M99
+Glomerular diseases	N00-N08
+Tubulointerstitial kidney diseases	N10-N16
+renal insufficiency	N17-N19
+Urolithiasis	N20-N23
+Other diseases of the kidney and ureter	N25-N29
+Other diseases of the urinary system	N30-N39
+Diseases of the male genital organs	N40-N51
+Non - inflammatory diseases of the female genital tract	N80-N98
+Other diseases of the genitourinary system	N99-N99
+Pregnancy with abortive output	O00-O08
+Edema , proteinuria and hypertension during pregnancy , childbirth and the puerperium	O10-O16
+Other diseases of the mother that are predominantly associated with pregnancy	O20-O29
+Care of the mother with regard to the fetus and the amniotic cavity as well as possible delivery complications	O30-O48
+childbirth	O80-O82
+Complications that occur predominantly in the puerperium	O85-O92
+Damage to the fetus and newborn by maternal factors and complications of pregnancy , labor and childbirth	P00-P04
+Disorders related to pregnancy duration and fetal growth	P05-P08
+Diseases of the respiratory and cardiovascular system specific to the perinatal period	P20-P29
+Infections specific to the perinatal period	P35-P39
+Hemorrhagic and haematological diseases in the fetus and newborn	P50-P61
+Other disorders originating in the perinatal period	P90-P96
+Congenital malformations of the nervous system	Q00-Q07
+Congenital malformations of the eye , ear , face and neck	Q10-Q18
+Congenital malformations of the circulatory system	Q20-Q28
+Congenital malformations of the respiratory system	Q30-Q34
+Lip , jaw and palate cleft	Q35-Q37
+Other congenital malformations of the digestive system	Q38-Q45
+Congenital malformations of the urinary system	Q60-Q64
+Congenital malformations and deformities of the musculoskeletal system	Q65-Q79
+Other congenital malformations	Q80-Q89
+Chromosomal abnormalities , not elsewhere classified	Q90-Q99
+Symptoms that affect the circulatory system and the respiratory system	R00-R09
+Symptoms that affect the nervous system and the musculoskeletal system	R25-R29
+Symptoms that affect the urinary system	R30-R39
+Symptoms that affect the ability to recognize and perceive , mood and behavior	R40-R46
+General symptoms	R50-R69
+Abnormal blood test findings without diagnosis	R70-R79
+Abnormal urinalysis findings without diagnosis	R80-R82
+Abnormal findings without diagnosis in diagnostic imaging and functional testing	R90-R94
+Inaccurately designated and unknown causes of death	R95-R99
+Injuries of the head	S00-S09
+Injuries of the neck	S10-S19
+Injuries of the thorax	S20-S29
+Injuries to the abdomen , lumbosacral region , lumbar spine and pelvis	S30-S39
+Injuries of the shoulder and upper arm	S40-S49
+Injuries of the wrist and hand	S60-S69
+Injuries of the hip and thigh	S70-S79
+Injuries to the knee and lower leg	S80-S89
+Injuries involving multiple body regions	T00-T07
+Injuries to unspecified parts of the trunk , extremities or other parts of the body	T08-T14
+Burns or burns of the outer body surface , localization called	T20-T25
+Burns or burns	T20-T32
+Burns or burns that are limited to the eye and internal organs	T26-T28
+Burns or burns of several and unspecified body regions	T29-T32
+Poisoning by drugs , drugs and biologically active substances	T36-T50
+Toxic effects of predominantly non - medicated substances	T51-T65
+Other and unspecified damages due to external causes	T66-T78
+Certain early complications of a trauma	T79-T79
+Complications of surgical procedures and medical treatment , not elsewhere classified	T80-T88
+Other complications of trauma , not elsewhere classified	T89-T89
+Consequences of injuries , poisoning and other effects of external causes	T90-T98
+Provisional assignments for diseases with unclear aetiology and unoccupied key numbers	U00-U49
+Infectious agents with resistance to certain antibiotics or chemotherapeutic agents	U80-U85
+Mental and behavioral disorders	V
+accidents	V01-X59
+Diseases of the nervous system	VI
+Diseases of the eye and the eye appendages	VII
+Diseases of the ear and mastoid	VIII
+Diseases of the respiratory system	X
+Diseases of the digestive system	XI
+Diseases of the skin and subcutaneous tissue	XII
+Diseases of the musculoskeletal system and connective tissue	XIII
+Diseases of the genitourinary system	XIV
+injuries , intoxications and certain other consequences of external causes	XIX
+Pregnancy , childbirth and puerperium	XV
+Certain states that have their origin in the perinatal period	XVI
+Congenital malformations , deformities and chromosomal abnormalities	XVII
+Symptoms and abnormal clinical and laboratory findings not elsewhere classified	XVIII
+External causes of morbidity and mortality	XX
+Factors that influence the state of health and lead to the use of health care	XXI
+Key numbers for special purposes	XXII
+Event whose circumstances are indefinite	Y10-Y34
+Complications in medical and surgical treatment	Y40-Y84
+Persons who use the healthcare system for examination and clarification	Z00-Z13
+People with potential health risks from communicable diseases	Z20-Z29
+People who use healthcare in connection with reproductive problems	Z30-Z39
+Individuals who use the healthcare system for specific measures and medical care	Z40-Z54
+Persons with potential health risks due to socio - economic or psychosocial circumstances	Z55-Z65
+People who use health care for other reasons	Z70-Z76
+Persons with potential health risks due to family or personal history and certain conditions affecting their health	Z80-Z99

@@ -1,0 +1,230 @@
+Infektiöse Darmkrankheiten	A00-A09
+Tuberkulose	A15-A19
+Bestimmte bakterielle Zoonosen	A20-A28
+Sonstige bakterielle Krankheiten	A30-A49
+Infektionen, die vorwiegend durch Geschlechtsverkehr übertragen werden	A50-A64
+Sonstige Spirochätenkrankheiten	A65-A69
+Sonstige Krankheiten durch Chlamydien	A70-A74
+Rickettsiosen	A75-A79
+Virusinfektionen des Zentralnervensystems	A80-A89
+Durch Arthropoden übertragene Viruskrankheiten und virale hämorrhagische Fieber	A92-A99
+Virusinfektionen, die durch Haut- und Schleimhautläsionen gekennzeichnet sind	B00-B09
+Virushepatitis	B15-B19
+HIV-Krankheit [Humane Immundefizienz-Viruskrankheit]	B20-B24
+Sonstige Viruskrankheiten	B25-B34
+Mykosen	B35-B49
+Protozoenkrankheiten	B50-B64
+Helminthosen	B65-B83
+Pedikulose [Läusebefall], Akarinose [Milbenbefall] und sonstiger Parasitenbefall der Haut	B85-B89
+Bakterien, Viren und sonstige Infektionserreger als Ursache von Krankheiten, die in anderen Kapiteln klassifiziert sind	B95-B98
+Sonstige Infektionskrankheiten	B99-B99
+Bösartige Neubildungen der Lippe, der Mundhöhle und des Pharynx	C00-C14
+Bösartige Neubildungen an genau bezeichneten Lokalisationen, als primär festgestellt oder vermutet, ausgenommen lymphatisches, blutbildendes und verwandtes Gewebe	C00-C75
+Bösartige Neubildungen	C00-C97
+Bösartige Neubildungen der Verdauungsorgane	C15-C26
+Bösartige Neubildungen der Atmungsorgane und sonstiger intrathorakaler Organe	C30-C39
+Bösartige Neubildungen des Knochens und des Gelenkknorpels	C40-C41
+Melanom und sonstige bösartige Neubildungen der Haut	C43-C44
+Bösartige Neubildungen des mesothelialen Gewebes und des Weichteilgewebes	C45-C49
+Bösartige Neubildungen der Brustdrüse [Mamma]	C50-C50
+Bösartige Neubildungen der weiblichen Genitalorgane	C51-C58
+Bösartige Neubildungen der männlichen Genitalorgane	C60-C63
+Bösartige Neubildungen der Harnorgane	C64-C68
+Bösartige Neubildungen des Auges, des Gehirns und sonstiger Teile des Zentralnervensystems	C69-C72
+Bösartige Neubildungen der Schilddrüse und sonstiger endokriner Drüsen	C73-C75
+Bösartige Neubildungen ungenau bezeichneter, sekundärer und nicht näher bezeichneter Lokalisationen	C76-C80
+Bösartige Neubildungen des lymphatischen, blutbildenden und verwandten Gewebes, als primär festgestellt oder vermutet	C81-C96
+In-situ-Neubildungen	D00-D09
+Gutartige Neubildungen	D10-D36
+Neubildungen unsicheren oder unbekannten Verhaltens	D37-D48
+Hämolytische Anämien	D55-D59
+Aplastische und sonstige Anämien	D60-D64
+Koagulopathien, Purpura und sonstige hämorrhagische Diathesen	D65-D69
+Sonstige Krankheiten des Blutes und der blutbildenden Organe	D70-D77
+Bestimmte Störungen mit Beteiligung des Immunsystems	D80-D90
+Krankheiten der Schilddrüse	E00-E07
+Diabetes mellitus	E10-E14
+Sonstige Störungen der Blutglukose-Regulation und der inneren Sekretion des Pankreas	E15-E16
+Krankheiten sonstiger endokriner Drüsen	E20-E35
+Mangelernährung	E40-E46
+Sonstige alimentäre Mangelzustände	E50-E64
+Adipositas und sonstige Überernährung	E65-E68
+Stoffwechselstörungen	E70-E90
+Organische, einschließlich symptomatischer psychischer Störungen	F00-F09
+Psychische und Verhaltensstörungen durch psychotrope Substanzen	F10-F19
+Schizophrenie, schizotype und wahnhafte Störungen	F20-F29
+Affektive Störungen	F30-F39
+Neurotische, Belastungs- und somatoforme Störungen	F40-F48
+Verhaltensauffälligkeiten mit körperlichen Störungen und Faktoren	F50-F59
+Persönlichkeits- und Verhaltensstörungen	F60-F69
+Intelligenzstörung	F70-F79
+Entwicklungsstörungen	F80-F89
+Verhaltens- und emotionale Störungen mit Beginn in der Kindheit und Jugend	F90-F98
+Nicht näher bezeichnete psychische Störungen	F99-F99
+Entzündliche Krankheiten des Zentralnervensystems	G00-G09
+Systematrophien, die vorwiegend das Zentralnervensystem betreffen	G10-G14
+Extrapyramidale Krankheiten und Bewegungsstörungen	G20-G26
+Sonstige degenerative Krankheiten des Nervensystems	G30-G32
+Demyelinisierende Krankheiten des Zentralnervensystems	G35-G37
+Episodische und paroxysmale Krankheiten des Nervensystems	G40-G47
+Krankheiten von Nerven, Nervenwurzeln und Nervenplexus	G50-G59
+Polyneuropathien und sonstige Krankheiten des peripheren Nervensystems	G60-G64
+Krankheiten im Bereich der neuromuskulären Synapse und des Muskels	G70-G73
+Zerebrale Lähmung und sonstige Lähmungssyndrome	G80-G83
+Sonstige Krankheiten des Nervensystems	G90-G99
+Affektionen des Augenlides, des Tränenapparates und der Orbita	H00-H06
+Affektionen der Sklera, der Hornhaut, der Iris und des Ziliarkörpers	H15-H22
+Affektionen der Linse	H25-H28
+Affektionen der Aderhaut und der Netzhaut	H30-H36
+Glaukom	H40-H42
+Affektionen des N. opticus und der Sehbahn	H46-H48
+Affektionen der Augenmuskeln, Störungen der Blickbewegungen sowie Akkommodationsstörungen und Refraktionsfehler	H49-H52
+Sehstörungen und Blindheit	H53-H54
+Sonstige Affektionen des Auges und der Augenanhangsgebilde	H55-H59
+Krankheiten des Innenohres	H80-H83
+Sonstige Krankheiten des Ohres	H90-H95
+Bestimmte infektiöse und parasitäre Krankheiten	I
+Chronische rheumatische Herzkrankheiten	I05-I09
+Hypertonie [Hochdruckkrankheit]	I10-I15
+Ischämische Herzkrankheiten	I20-I25
+Pulmonale Herzkrankheit und Krankheiten des Lungenkreislaufes	I26-I28
+Sonstige Formen der Herzkrankheit	I30-I52
+Zerebrovaskuläre Krankheiten	I60-I69
+Krankheiten der Arterien, Arteriolen und Kapillaren	I70-I79
+Krankheiten der Venen, der Lymphgefäße und der Lymphknoten, anderenorts nicht klassifiziert	I80-I89
+Sonstige und nicht näher bezeichnete Krankheiten des Kreislaufsystems	I95-I99
+Neubildungen	II
+Krankheiten des Blutes und der blutbildenden Organe sowie bestimmte Störungen mit Beteiligung des Immunsystems	III
+Endokrine, Ernährungs- und Stoffwechselkrankheiten	IV
+Krankheiten des Kreislaufsystems	IX
+Akute Infektionen der oberen Atemwege	J00-J06
+Grippe und Pneumonie	J09-J18
+Sonstige akute Infektionen der unteren Atemwege	J20-J22
+Sonstige Krankheiten der oberen Atemwege	J30-J39
+Chronische Krankheiten der unteren Atemwege	J40-J47
+Lungenkrankheiten durch exogene Substanzen	J60-J70
+Sonstige Krankheiten der Atmungsorgane, die hauptsächlich das Interstitium betreffen	J80-J84
+Sonstige Krankheiten des Atmungssystems	J95-J99
+Krankheiten der Mundhöhle, der Speicheldrüsen und der Kiefer	K00-K14
+Krankheiten des Ösophagus, des Magens und des Duodenums	K20-K31
+Hernien	K40-K46
+Nichtinfektiöse Enteritis und Kolitis	K50-K52
+Sonstige Krankheiten des Darmes	K55-K64
+Krankheiten des Peritoneums	K65-K67
+Krankheiten der Leber	K70-K77
+Krankheiten der Gallenblase, der Gallenwege und des Pankreas	K80-K87
+Sonstige Krankheiten des Verdauungssystems	K90-K93
+Infektionen der Haut und der Unterhaut	L00-L08
+Bullöse Dermatosen	L10-L14
+Dermatitis und Ekzem	L20-L30
+Papulosquamöse Hautkrankheiten	L40-L45
+Urtikaria und Erythem	L50-L54
+Krankheiten der Hautanhangsgebilde	L60-L75
+Sonstige Krankheiten der Haut und der Unterhaut	L80-L99
+Infektiöse Arthropathien	M00-M03
+Arthropathien	M00-M25
+Entzündliche Polyarthropathien	M05-M14
+Arthrose	M15-M19
+Sonstige Gelenkkrankheiten	M20-M25
+Systemkrankheiten des Bindegewebes	M30-M36
+Krankheiten der Wirbelsäule und des Rückens	M40-M54
+Sonstige Krankheiten der Wirbelsäule und des Rückens	M50-M54
+Krankheiten der Muskeln	M60-M63
+Krankheiten der Weichteilgewebe	M60-M79
+Krankheiten der Synovialis und der Sehnen	M65-M68
+Sonstige Krankheiten des Weichteilgewebes	M70-M79
+Veränderungen der Knochendichte und -struktur	M80-M85
+Osteopathien und Chondropathien	M80-M94
+Sonstige Osteopathien	M86-M90
+Chondropathien	M91-M94
+Sonstige Krankheiten des Muskel-Skelett-Systems und des Bindegewebes	M95-M99
+Glomeruläre Krankheiten	N00-N08
+Tubulointerstitielle Nierenkrankheiten	N10-N16
+Niereninsuffizienz	N17-N19
+Urolithiasis	N20-N23
+Sonstige Krankheiten der Niere und des Ureters	N25-N29
+Sonstige Krankheiten des Harnsystems	N30-N39
+Krankheiten der männlichen Genitalorgane	N40-N51
+Nichtentzündliche Krankheiten des weiblichen Genitaltraktes	N80-N98
+Sonstige Krankheiten des Urogenitalsystems	N99-N99
+Schwangerschaft mit abortivem Ausgang	O00-O08
+Ödeme, Proteinurie und Hypertonie während der Schwangerschaft, der Geburt und des Wochenbettes	O10-O16
+Sonstige Krankheiten der Mutter, die vorwiegend mit der Schwangerschaft verbunden sind	O20-O29
+Betreuung der Mutter im Hinblick auf den Fetus und die Amnionhöhle sowie mögliche Entbindungskomplikationen	O30-O48
+Entbindung	O80-O82
+Komplikationen, die vorwiegend im Wochenbett auftreten	O85-O92
+Schädigung des Fetus und Neugeborenen durch mütterliche Faktoren und durch Komplikationen bei Schwangerschaft, Wehentätigkeit und Entbindung	P00-P04
+Störungen im Zusammenhang mit der Schwangerschaftsdauer und dem fetalen Wachstum	P05-P08
+Krankheiten des Atmungs- und Herz-Kreislaufsystems, die für die Perinatalperiode spezifisch sind	P20-P29
+Infektionen, die für die Perinatalperiode spezifisch sind	P35-P39
+Hämorrhagische und hämatologische Krankheiten beim Fetus und Neugeborenen	P50-P61
+Sonstige Störungen, die ihren Ursprung in der Perinatalperiode haben	P90-P96
+Angeborene Fehlbildungen des Nervensystems	Q00-Q07
+Angeborene Fehlbildungen des Auges, des Ohres, des Gesichtes und des Halses	Q10-Q18
+Angeborene Fehlbildungen des Kreislaufsystems	Q20-Q28
+Angeborene Fehlbildungen des Atmungssystems	Q30-Q34
+Lippen-, Kiefer- und Gaumenspalte	Q35-Q37
+Sonstige angeborene Fehlbildungen des Verdauungssystems	Q38-Q45
+Angeborene Fehlbildungen des Harnsystems	Q60-Q64
+Angeborene Fehlbildungen und Deformitäten des Muskel-Skelett-Systems	Q65-Q79
+Sonstige angeborene Fehlbildungen	Q80-Q89
+Chromosomenanomalien, anderenorts nicht klassifiziert	Q90-Q99
+Symptome, die das Kreislaufsystem und das Atmungssystem betreffen	R00-R09
+Symptome, die das Nervensystem und das Muskel-Skelett-System betreffen	R25-R29
+Symptome, die das Harnsystem betreffen	R30-R39
+Symptome, die das Erkennungs- und Wahrnehmungsvermögen, die Stimmung und das Verhalten betreffen	R40-R46
+Allgemeinsymptome	R50-R69
+Abnorme Blutuntersuchungsbefunde ohne Vorliegen einer Diagnose	R70-R79
+Abnorme Urinuntersuchungsbefunde ohne Vorliegen einer Diagnose	R80-R82
+Abnorme Befunde ohne Vorliegen einer Diagnose bei bildgebender Diagnostik und Funktionsprüfungen	R90-R94
+Ungenau bezeichnete und unbekannte Todesursachen	R95-R99
+Verletzungen des Kopfes	S00-S09
+Verletzungen des Halses	S10-S19
+Verletzungen des Thorax	S20-S29
+Verletzungen des Abdomens, der Lumbosakralgegend, der Lendenwirbelsäule und des Beckens	S30-S39
+Verletzungen der Schulter und des Oberarmes	S40-S49
+Verletzungen des Handgelenkes und der Hand	S60-S69
+Verletzungen der Hüfte und des Oberschenkels	S70-S79
+Verletzungen des Knies und des Unterschenkels	S80-S89
+Verletzungen mit Beteiligung mehrerer Körperregionen	T00-T07
+Verletzungen nicht näher bezeichneter Teile des Rumpfes, der Extremitäten oder anderer Körperregionen	T08-T14
+Verbrennungen oder Verätzungen der äußeren Körperoberfläche, Lokalisation bezeichnet	T20-T25
+Verbrennungen oder Verätzungen	T20-T32
+Verbrennungen oder Verätzungen, die auf das Auge und auf innere Organe begrenzt sind	T26-T28
+Verbrennungen oder Verätzungen mehrerer und nicht näher bezeichneter Körperregionen	T29-T32
+Vergiftungen durch Arzneimittel, Drogen und biologisch aktive Substanzen	T36-T50
+Toxische Wirkungen von vorwiegend nicht medizinisch verwendeten Substanzen	T51-T65
+Sonstige und nicht näher bezeichnete Schäden durch äußere Ursachen	T66-T78
+Bestimmte Frühkomplikationen eines Traumas	T79-T79
+Komplikationen bei chirurgischen Eingriffen und medizinischer Behandlung, anderenorts nicht klassifiziert	T80-T88
+Sonstige Komplikationen eines Traumas, anderenorts nicht klassifiziert	T89-T89
+Folgen von Verletzungen, Vergiftungen und sonstigen Auswirkungen äußerer Ursachen	T90-T98
+Vorläufige Zuordnungen für Krankheiten mit unklarer Ätiologie und nicht belegte Schlüsselnummern	U00-U49
+Infektionserreger mit Resistenzen gegen bestimmte Antibiotika oder Chemotherapeutika	U80-U85
+Psychische und Verhaltensstörungen	V
+Unfälle	V01-X59
+Krankheiten des Nervensystems	VI
+Krankheiten des Auges und der Augenanhangsgebilde	VII
+Krankheiten des Ohres und des Warzenfortsatzes	VIII
+Krankheiten des Atmungssystems	X
+Krankheiten des Verdauungssystems	XI
+Krankheiten der Haut und der Unterhaut	XII
+Krankheiten des Muskel-Skelett-Systems und des Bindegewebes	XIII
+Krankheiten des Urogenitalsystems	XIV
+erletzungen, Vergiftungen und bestimmte andere Folgen äußerer Ursachen	XIX
+Schwangerschaft, Geburt und Wochenbett	XV
+Bestimmte Zustände, die ihren Ursprung in der Perinatalperiode haben	XVI
+Angeborene Fehlbildungen, Deformitäten und Chromosomenanomalien	XVII
+Symptome und abnorme klinische und Laborbefunde, die anderenorts nicht klassifiziert sind	XVIII
+Äußere Ursachen von Morbidität und Mortalität	XX
+Faktoren, die den Gesundheitszustand beeinflussen und zur Inanspruchnahme des Gesundheitswesens führen	XXI
+Schlüsselnummern für besondere Zwecke	XXII
+Ereignis, dessen nähere Umstände unbestimmt sind	Y10-Y34
+Komplikationen bei der medizinischen und chirurgischen Behandlung	Y40-Y84
+Personen, die das Gesundheitswesen zur Untersuchung und Abklärung in Anspruch nehmen	Z00-Z13
+Personen mit potentiellen Gesundheitsrisiken hinsichtlich übertragbarer Krankheiten	Z20-Z29
+Personen, die das Gesundheitswesen im Zusammenhang mit Problemen der Reproduktion in Anspruch nehmen	Z30-Z39
+Personen, die das Gesundheitswesen zum Zwecke spezifischer Maßnahmen und zur medizinischen Betreuung in Anspruch nehmen	Z40-Z54
+Personen mit potentiellen Gesundheitsrisiken aufgrund sozioökonomischer oder psychosozialer Umstände	Z55-Z65
+Personen, die das Gesundheitswesen aus sonstigen Gründen in Anspruch nehmen	Z70-Z76
+Personen mit potentiellen Gesundheitsrisiken aufgrund der Familien- oder Eigenanamnese und bestimmte Zustände, die den Gesundheitszustand beeinflussen	Z80-Z99
