@@ -260,9 +260,10 @@ class BertForMultiLabelSequenceClassification(BertPreTrainedModel):
         if `labels` is `None`:
             Outputs the classification logits of shape [batch_size, num_labels].
     """
-    def __init__(self, config, num_labels=2):
+    def __init__(self, config, num_labels=2, loss_fct="bbce"):
         super(BertForMultiLabelSequenceClassification, self).__init__(config)
         self.num_labels = num_labels
+        self.loss_fct = loss_fct
         self.bert = BertModel(config)
         self.dropout = torch.nn.Dropout(config.hidden_dropout_prob)
         self.classifier = torch.nn.Linear(config.hidden_size, num_labels)
@@ -274,7 +275,10 @@ class BertForMultiLabelSequenceClassification(BertPreTrainedModel):
         logits = self.classifier(pooled_output)
         
         if labels is not None:
-            loss_fct = BalancedBCEWithLogitsLoss()
+            if self.loss_fct == "bbce":
+                loss_fct = BalancedBCEWithLogitsLoss()
+            else:
+                loss_fct = torch.nn.MultiLabelSoftMarginLoss()
             loss = loss_fct(logits.view(-1, self.num_labels), labels.view(-1, self.num_labels))
             return loss
         else:
@@ -394,6 +398,11 @@ def main():
                         default=5e-5,
                         type=float,
                         help="The initial learning rate for Adam.")
+    parser.add_argument("--loss_fct",
+                        default="bbce",
+                        type=str,
+                        help="Loss function to use BalancedBCEWithLogitsLoss (`bbce`) \n"
+                             "or MultiLabelSoftMarginLoss (`msm`).")
     parser.add_argument("--num_train_epochs",
                         default=3.0,
                         type=float,
@@ -504,7 +513,8 @@ def main():
     cache_dir = args.cache_dir if args.cache_dir else os.path.join(str(PYTORCH_PRETRAINED_BERT_CACHE), 'distributed_{}'.format(args.local_rank))
     model = BertForMultiLabelSequenceClassification.from_pretrained(args.bert_model, 
         cache_dir=cache_dir,
-        num_labels=num_labels
+        num_labels=num_labels,
+        loss_fct=args.loss_fct
     )
     if args.fp16:
         model.half()
@@ -691,9 +701,15 @@ def main():
         ids = ids[0]
         preds = sigmoid(preds[0])
         preds = (preds > 0.5).astype(int)
+        id2preds = {val:preds[i] for i, val in enumerate(ids)}
+        
+        for i, val in enumerate(all_ids_test):
+            if val not in id2preds:
+                id2preds[val] = []
         
         with open(os.path.join(args.data_dir, "mlb.pkl"), "rb") as rf:
             mlb = pkl.load(rf)
+
         preds = [mlb.classes_[preds[i, :].astype(bool)].tolist() for i in range(preds.shape[0])]
         id2preds = {val:preds[i] for i, val in enumerate(ids)}
         preds = [id2preds[val] if val in id2preds else [] for i, val in enumerate(all_ids_test)]
@@ -796,7 +812,7 @@ if __name__ == "__main__":
 
 """
 
-export BERT_MODEL=/path/to/bert-model
+export BERT_MODEL=/home/mlt/saad/tmp/pubmed_pmc_470k
 
 ## STEP 1: Convert TF checkpoint to PyTorch model
 
@@ -810,6 +826,27 @@ python convert_tf_checkpoint_to_pytorch.py \
 
 export DATA_DIR=exps-data/data
 export BERT_EXPS_DIR=tmp/bert-exps-dir
+export BERT_MODEL=$BERT_EXPS_DIR/
+
+python bert_multilabel_run_classifier.py \
+    --data_dir $DATA_DIR \
+    --use_data en \
+    --bert_model tmp/model \
+    --task_name clef \
+    --output_dir $BERT_EXPS_DIR/output \
+    --cache_dir $BERT_EXPS_DIR/cache \
+    --max_seq_length 256 \
+    --num_train_epochs 7.0 \
+    --do_train \
+    --do_eval \
+    --train_batch_size 16
+
+
+## STEP 3: Inference
+
+export DATA_DIR=exps-data/data
+export BERT_EXPS_DIR=tmp/bert-exps-dir
+export BERT_MODEL=/home/mlt/saad/projects/multilingual-ir-task1-clef-ehealth-2019/tmp/bert-exps-dir/output-20-epochs-biobert-en-data_t15_c108
 
 python bert_multilabel_run_classifier.py \
     --data_dir $DATA_DIR \
@@ -819,23 +856,15 @@ python bert_multilabel_run_classifier.py \
     --output_dir $BERT_EXPS_DIR/output \
     --cache_dir $BERT_EXPS_DIR/cache \
     --max_seq_length 256 \
-    --num_train_epochs 20 \
-    --do_train \
     --do_eval \
     --train_batch_size 6
 
+## STEP 4: Evaluate
 
-## STEP 3: Inference
+python evaluation.py --ids_file="/home/mlt/Desktop/clef2019-task1-master/data/gold/ids_test.txt" \
+                     --anns_file="/home/mlt/Desktop/clef2019-task1-master/data/gold/anns_test.txt" \
+                     --dev_file="/home/mlt/Desktop/clef2019-task1-master/preds_test.txt" \
+                     --out_file="/home/mlt/Desktop/clef2019-task1-master/eval_output.txt"
 
-python bert_multilabel_run_classifier.py \
-    --data_dir $DATA_DIR \
-    --use_data en \
-    --bert_model $BERT_EXPS_DIR/output \
-    --task_name clef \
-    --output_dir $BERT_EXPS_DIR/output \
-    --cache_dir $BERT_EXPS_DIR/cache \
-    --max_seq_length 256 \
-    --do_eval \
-    --train_batch_size 6
 
 """
