@@ -1,0 +1,16 @@
+batch_size = 64
+max_seq_len = 256
+embed_dim = 300
+epochs = 50
+lr = 0.001
+load_pretrain_ftde = True
+pretrain_file = '/home/mlt/saad/tmp/cc.en.300.vec'
+# HAN params
+hidden_dim = 300
+max_sents_in_doc = 10
+max_words_in_sent = 40
+as_heirarchy = False
+bidirectional = True
+# data params
+use_data = "en"
+# early stopping at 23rd epoch
