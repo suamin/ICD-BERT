@@ -1,4 +1,3 @@
-
 import argparse
 import os
 
@@ -19,8 +18,12 @@ def eval(args):
 	fns = 0
 	out_file = open(os.path.join(args.out_file), "w")
 	for id in ids:
+#		print(id,preds[id])
 		anns_id = anns[id]
-		preds_id = preds[id]
+		if id in preds:
+			preds_id = preds[id]
+		else:
+			preds_id = []
 #		print(id,anns_id,preds_id)
 		for pred in preds_id:
 			if pred in anns_id:
