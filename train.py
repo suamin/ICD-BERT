@@ -10,7 +10,7 @@ from sklearn.metrics import f1_score
 from tqdm import tqdm, trange
 
 
-def evaluate(dataloader, model, device):
+def evaluate(dataloader, model, device, no_labels=False):
     # Turn on evaluation mode which disables dropout.
     model.eval()
     logits = []
@@ -36,31 +36,40 @@ def evaluate(dataloader, model, device):
     with torch.no_grad():  
         for batch in tqdm(dataloader, desc="Iteration"):
             batch = tuple(t.to(device) for t in batch)
-            b_inputs, b_labels, b_ids = batch
-            
+            if no_labels:
+                b_inputs, b_ids = batch
+            else:
+                b_inputs, b_labels, b_ids = batch
+
             b_logits = model(b_inputs)
-            loss = loss_fct(b_logits, b_labels)
-            avg_loss += loss.item()
+            if not no_labels:
+                loss = loss_fct(b_logits, b_labels)
+                avg_loss += loss.item()
             
             b_preds = (torch.sigmoid(b_logits).detach().cpu().numpy() >= 0.5).astype(int)
             b_logits = detach(b_logits, float)
-            b_labels = detach(b_labels, int)
+            if not no_labels:
+                b_labels = detach(b_labels, int)
             b_ids = detach(b_ids, int)
             
             preds = append(preds, b_preds)
             logits = append(logits, b_logits)
-            labels = append(labels, b_labels)
+            if not no_labels:
+                labels = append(labels, b_labels)
             ids = append(ids, b_ids)
     
-    avg_loss /= len(dataloader)
     preds = preds[0]
     logits = logits[0]
-    labels = labels[0]
+    if not no_labels:
+        labels = labels[0]
+        avg_loss /= len(dataloader)
     ids = ids[0]
     
-    score = f1_score(y_true=labels, y_pred=preds, average='micro')
-    
-    print("\nEvaluation - loss: {:.6f}  f1: {:.4f}%\n".format(avg_loss, score))
+    if not no_labels:
+        score = f1_score(y_true=labels, y_pred=preds, average='micro')
+        print("\nEvaluation - loss: {:.6f}  f1: {:.4f}%\n".format(avg_loss, score))
+    else:
+        score = 0.
     
     return score, (logits, preds, labels, ids, avg_loss)
 
