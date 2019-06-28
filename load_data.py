@@ -126,7 +126,8 @@ def batched_data(*tensors, batch_size=64):
 
 
 def get_X_y_ids(input_file, word2index, use_data="de", max_seq_len=256,
-                as_heirarchy=False, max_sents_in_doc=10, max_words_in_sent=40):
+                as_heirarchy=False, max_sents_in_doc=10, max_words_in_sent=40,
+                is_test=False):
     
     data = load_pkl_datafile(input_file, use_data=use_data, as_sents=as_heirarchy)
     
@@ -138,7 +139,8 @@ def get_X_y_ids(input_file, word2index, use_data="de", max_seq_len=256,
         else:
             X.append(pad_seq(text_to_seq(text, word2index), max_seq_len))
         
-        y.append(labels)
+        if not is_test:
+            y.append(labels)
         doc_ids.append(doc_id)
     
     X = torch.tensor(X, dtype=torch.long)
@@ -151,8 +153,9 @@ def get_X_y_ids(input_file, word2index, use_data="de", max_seq_len=256,
     else:
         X = X.view(-1, max_seq_len)
     
-    num_classes = len(y[0])
-    y = y.view(-1, num_classes)
+    if not is_test:
+        num_classes = len(y[0])
+        y = y.view(-1, num_classes)
     doc_ids = doc_ids.view(-1)
     
     return X, y, doc_ids
@@ -160,7 +163,7 @@ def get_X_y_ids(input_file, word2index, use_data="de", max_seq_len=256,
 
 def get_data(train_file, dev_file, use_data="de", max_seq_len=256,
              as_heirarchy=False, max_sents_in_doc=10, max_words_in_sent=40, 
-             **kwargs):
+             test_file=None, **kwargs):
     
     data = load_pkl_datafile(train_file, use_data=use_data, as_sents=as_heirarchy)
     if as_heirarchy:
@@ -181,13 +184,23 @@ def get_data(train_file, dev_file, use_data="de", max_seq_len=256,
         as_heirarchy=as_heirarchy, max_sents_in_doc=max_sents_in_doc, 
         max_words_in_sent=max_words_in_sent
     )
-
-    return (Xtrain, ytrain, ids_train), (Xdev, ydev, ids_dev), word2index
+    
+    if test_file:
+        Xtest, _, ids_test = get_X_y_ids(
+            test_file, word2index, use_data=use_data, max_seq_len=max_seq_len,
+            as_heirarchy=as_heirarchy, max_sents_in_doc=max_sents_in_doc, 
+            max_words_in_sent=max_words_in_sent, is_test=True
+        )
+    
+    if test_file:
+        return (Xtrain, ytrain, ids_train), (Xdev, ydev, ids_dev), (Xtest, ids_test), word2index
+    else:
+        return (Xtrain, ytrain, ids_train), (Xdev, ydev, ids_dev), word2index
 
 
 def get_titles_T(codes_titles_file):
     titles = []
-    with open(codes_and_titles_file, "r") as rf:
+    with open(codes_titles_file, "r") as rf:
         for line in rf:
             title, code = line.split("\t")
             titles.append(title)
