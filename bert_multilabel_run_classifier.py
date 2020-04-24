@@ -591,7 +591,7 @@ def main():
         preds = []
         ids = []
         # FIXME: make it flexible to accept path
-        all_ids_dev = read_ids("data/nts-icd/ids_development.txt")
+        all_ids_dev = read_ids("exps-data/data/ids_development.txt")
         
         for input_ids, input_mask, segment_ids, label_ids, doc_ids in tqdm(eval_dataloader, desc="Evaluating"):
             input_ids = input_ids.to(device)
@@ -675,7 +675,7 @@ def main():
         preds = []
         ids = []
         # FIXME: make it flexible to accept path
-        all_ids_test = read_ids(os.path.join(args.data_dir, "ids_testing.txt"))
+        all_ids_test = read_ids(os.path.join(args.data_dir, "ids_test.txt"))
         
         for input_ids, input_mask, segment_ids, doc_ids in tqdm(test_dataloader, desc="Evaluating"):
             input_ids = input_ids.to(device)
@@ -684,7 +684,7 @@ def main():
             doc_ids = doc_ids.to(device)
             
             with torch.no_grad():
-                logits = model(input_ids, segment_ids, input_mask, labels=None)
+                logits = model(input_ids=input_ids, token_type_ids=segment_ids, attention_mask=input_mask, labels=None)
             
             nb_eval_steps += 1
             if len(preds) == 0:
@@ -749,7 +749,7 @@ def main():
                 input_ids, input_mask, segment_ids, label_ids = batch
                 
                 # define a new function to compute loss values for both output_modes
-                logits = model(input_ids, segment_ids, input_mask, labels=None)
+                logits = model(input_ids=input_ids, token_type_ids=segment_ids, attention_mask=input_mask, labels=None)
                 
                 # if output_mode == "classification":
                 loss_fct = BalancedBCEWithLogitsLoss()
@@ -836,35 +836,30 @@ python bert_multilabel_run_classifier.py \
     --output_dir $BERT_EXPS_DIR/output \
     --cache_dir $BERT_EXPS_DIR/cache \
     --max_seq_length 256 \
-    --num_train_epochs 7.0 \
+    --num_train_epochs 20.0 \
     --do_train \
     --do_eval \
-    --train_batch_size 16
+    --train_batch_size 64
 
 
 ## STEP 3: Inference
 
-export DATA_DIR=exps-data/data
-export BERT_EXPS_DIR=tmp/bert-exps-dir
-export BERT_MODEL=/home/mlt/saad/projects/multilingual-ir-task1-clef-ehealth-2019/tmp/bert-exps-dir/output-20-epochs-biobert-en-data_t15_c108
-
 python bert_multilabel_run_classifier.py \
     --data_dir $DATA_DIR \
     --use_data en \
-    --bert_model $BERT_MODEL \
+    --bert_model $BERT_EXPS_DIR/output \
     --task_name clef \
     --output_dir $BERT_EXPS_DIR/output \
     --cache_dir $BERT_EXPS_DIR/cache \
     --max_seq_length 256 \
-    --do_eval \
-    --train_batch_size 6
+    --do_eval
 
 ## STEP 4: Evaluate
 
-python evaluation.py --ids_file="/home/mlt/Desktop/clef2019-task1-master/data/gold/ids_test.txt" \
-                     --anns_file="/home/mlt/Desktop/clef2019-task1-master/data/gold/anns_test.txt" \
-                     --dev_file="/home/mlt/Desktop/clef2019-task1-master/preds_test.txt" \
-                     --out_file="/home/mlt/Desktop/clef2019-task1-master/eval_output.txt"
+python evaluation.py --ids_file=$DATA_DIR/ids_development.txt \
+                     --anns_file=$DATA_DIR/anns_train_dev.txt \
+                     --dev_file=$BERT_EXPS_DIR/output/preds_development.txt \
+                     --out_file=$BERT_EXPS_DIR/output/eval_output.txt
 
 
 """
