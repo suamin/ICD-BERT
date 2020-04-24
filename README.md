@@ -44,7 +44,7 @@ Configure the paths:
 ```bash
 export DATA_DIR=exps-data/data
 export BERT_EXPS_DIR=tmp/bert-exps-dir
-
+export CUDA_VISIBLE_DEVICES=0,1,2,3
 ```
 Run the model:
 ```bash
@@ -56,11 +56,13 @@ python bert_multilabel_run_classifier.py \
     --output_dir $BERT_EXPS_DIR/output \
     --cache_dir $BERT_EXPS_DIR/cache \
     --max_seq_length 256 \
-    --num_train_epochs 7.0 \
+    --num_train_epochs 20.0 \
     --do_train \
     --do_eval \
-    --train_batch_size 16
+    --train_batch_size 64
 ```
+
+BERT English models (BioBERT, BERT-base-cased) results can be reproduced by 20 epochs and for multilingual BERT, with 25 epochs.
 
 ##### Inference
 
@@ -83,10 +85,10 @@ python bert_multilabel_run_classifier.py \
 Use official `evaluation.py` script to evaluate:
 
 ```bash
-python evaluation.py --ids_file=$DATA_DIR/ids_test.txt \
-                     --anns_file=$DATA_DIR/anns_test.txt \
-                     --dev_file=$DATA_DIR/preds_test.txt \
-                     --out_file=$DATA_DIR/eval_output.txt
+python evaluation.py --ids_file=$DATA_DIR/ids_development.txt \
+                     --anns_file=$DATA_DIR/anns_train_dev.txt \
+                     --dev_file=$BERT_EXPS_DIR/output/preds_development.txt \
+                     --out_file=$BERT_EXPS_DIR/output/eval_output.txt
 ```
 
 ## Running Other Models
