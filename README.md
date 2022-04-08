@@ -108,3 +108,18 @@ Change configurations [here](https://github.com/suamin/multilabel-classification
 For other hyperparameters, check [here](https://github.com/suamin/multilabel-classification-bert-icd10/blob/master/main.py#L46).
 
 After all the models have been tested and results placed under one [directory](https://github.com/suamin/multilabel-classification-bert-icd10/blob/master/predict.py#L37) (one has to manually check the folder names), use `predict.py` to reproduce the numbers found in `Results.txt`.
+
+## Citation
+
+If you find our work useful, please consider citing:
+
+```bibtex
+@inproceedings{amin2019mlt,
+  title={MLT-DFKI at CLEF eHealth 2019: Multi-label Classification of ICD-10 Codes with BERT.},
+  author={Amin, Saadullah and Neumann, G{\"u}nter and Dunfield, Katherine and Vechkaeva, Anna and Chapman, Kathryn Annette and Wixted, Morgan Kelly},
+  booktitle={Conference and Labs of the Evaluation Forum (Working Notes)},
+  url = {http://ceur-ws.org/Vol-2380/paper_67.pdf},
+  pages = {1--15},
+  year={2019}
+}
+```
