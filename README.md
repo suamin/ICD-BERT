@@ -115,11 +115,11 @@ If you find our work useful, please consider citing:
 
 ```bibtex
 @inproceedings{amin2019mlt,
-  title={MLT-DFKI at CLEF eHealth 2019: Multi-label Classification of ICD-10 Codes with BERT.},
-  author={Amin, Saadullah and Neumann, G{\"u}nter and Dunfield, Katherine and Vechkaeva, Anna and Chapman, Kathryn Annette and Wixted, Morgan Kelly},
-  booktitle={Conference and Labs of the Evaluation Forum (Working Notes)},
+  title={MLT-DFKI at CLEF eHealth 2019: Multi-label Classification of ICD-10 Codes with BERT},
+  author={Amin, Saadullah and Neumann, G{\"u}nter and Dunfield, Katherine Ann and Vechkaeva, Anna and Chapman, Kathryn Annette and Wixted, Morgan Kelly},
+  booktitle={Proceedings of the 20th Conference and Labs of the Evaluation Forum (Working Notes)},
   url = {http://ceur-ws.org/Vol-2380/paper_67.pdf},
   pages = {1--15},
-  year={2019}
+  year = {2019}
 }
 ```
